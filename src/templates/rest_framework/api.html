@@ -1,0 +1,13 @@
+{% extends "rest_framework/base.html" %}
+{% load staticfiles %}
+{% load rest_framework %}
+
+
+<title>{% block title %}apiaas{% endblock %}</title>
+
+
+{% block branding %}
+<a class='navbar-brand' rel="nofollow" href="{% url 'main_page' %}">
+    API as a service
+</a>
+{% endblock %}
