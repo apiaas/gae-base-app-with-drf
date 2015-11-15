@@ -1,0 +1,21 @@
+{% extends '_core/base.html' %}
+
+{% block content %}
+
+  <h2>Benefits</h2>
+  <ul>
+    <li>Base config files for GAE and DRF.</li>
+    <li>Setup scripts.</li>
+    <li>Datastore and DRF utils.</li>
+  </ul>
+  <h2>How to use</h2>
+  <p>
+    This is a base Google App Engine project that includes
+    Django Rest Framework. In order to use it clone the project,
+    create virtual environment and run <code>configure_requirements.py</code>
+    script. This assumes that you have GAE installed and configured correctly.
+    Running <code>which appcfg.py</code> in terminal should respond with a
+    full path to App Engine's <code>appcfg.py</code> script.
+  </p>
+
+{% endblock %}
