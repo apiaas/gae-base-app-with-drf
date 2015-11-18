@@ -36,7 +36,11 @@ TEMPLATE_LOADERS = (
     'django.template.loaders.filesystem.Loader',
     'django.template.loaders.app_directories.Loader',
 )
-TEMPLATE_DIRS = [os.path.join(BASE_DIR, 'templates')]
+
+TEMPLATE_DIRS = (
+    os.path.join(BASE_DIR, 'templates'),
+    os.path.join(BASE_DIR, 'landing', 'templates'),
+)
 
 # only use the memory file uploader, do not use the file system - not able to do so on
 # google app engine
@@ -65,5 +69,5 @@ SESSION_SERIALIZER = 'django.contrib.sessions.serializers.JSONSerializer'
 STATIC_URL = '/static/'
 
 STATIC_ROOT = os.path.join(BASE_DIR, "static")
-SECRET_KEY = '#62483%e^vp-=w0sd4sxem1%tdu@6(YDu%r@ff=$84l27wi%vd'
 
+SECRET_KEY = '#62483%e^vp-=w0sd4sxem1%tdu@6(YDu%r@ff=$84l27wi%vd'
